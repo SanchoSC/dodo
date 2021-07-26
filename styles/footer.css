@@ -1,0 +1,64 @@
+.footer-contacts{
+    margin-top: 50px;
+    margin-bottom: 352px;
+    text-align: right;
+}
+
+.number{
+    color:#fff;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.call{
+    margin-top: 6px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.5;
+    color:#fff;
+}
+
+.mail{
+    color: #fff;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    opacity: 0.9;
+    margin-top: 26px;
+
+}
+
+.footer-img{
+    margin-top: 50px;
+    height: auto;
+    width: 135px;
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom:29px ;
+}
+
+
+.img-container{
+    display: flex;
+
+}
+
+
+@media (max-width: 1200px){
+    .number{display: none}
+    .call{display: none}
+    .mail{display: none}
+    .footer-img{
+        margin-top:0;
+        margin-bottom:0;
+    }
+}
