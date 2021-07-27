@@ -1,34 +1,27 @@
 .footer-contacts{
-    margin-top: 50px;
-    margin-bottom: 352px;
     text-align: right;
+    color: #ffffff;
 }
 
-.number{
+.footer-contacts__number{
+    text-decoration:none;
     color:#fff;
-    font-family: Nunito;
-    font-style: normal;
     font-weight: 600;
     font-size: 26px;
     line-height: 26px;
 }
 
-.call{
+.footer-contacts__call{
     margin-top: 6px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 20px;
     opacity: 0.5;
     color:#fff;
 }
 
-.mail{
+.footer-contacts__mail{
+    text-decoration:none;
     color: #fff;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 20px;
     text-align: right;
@@ -37,26 +30,26 @@
 
 }
 
-.footer-img{
-    margin-top: 50px;
+.footer-contacts__img{
     height: auto;
     width: 135px;
     max-width: 50%;
     max-height: 50%;
-    margin-bottom:29px ;
+    margin-bottom:29px;
 }
 
 
-.img-container{
-    display: flex;
+.footer-contacts__img__container{
+    display: block;
 
 }
 
 
-@media (max-width: 1200px){
-    .number{display: none}
-    .call{display: none}
-    .mail{display: none}
+@media (max-width: 1024px){
+    .number,
+    .call,
+    .mail
+    {display: none}
     .footer-img{
         margin-top:0;
         margin-bottom:0;
