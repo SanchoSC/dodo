@@ -1,6 +1,7 @@
 .slider-box {
   margin-top: 50px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .slider {
@@ -11,22 +12,24 @@
   margin: 0;
 }
 
-.slider-item {
+.slider__item {
   width: 100%;
   margin-right: 30px;
   flex-shrink: 0;
 }
 
-.slider-item__1,
-.slider-item__3 {
+.slider__item_1,
+.slider__item_3 {
   opacity: 0.2;
 }
 
-.slider-img {
+.slider__img {
+  filter: drop-shadow(0px 5px 20px rgba(115, 121, 140, 0.15));
+  border-radius: 20px;
   width: 1060px;
   height: 300px;
 }
 
-.slider-item:first-child {
+.slider__item:first-child {
   margin-left: calc(-100% - 30px);
 }
