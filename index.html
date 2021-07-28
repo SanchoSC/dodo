@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html
+  lang="ru"
+  xmlns="http://www.w3.org/1999/html"
+  xmlns="http://www.w3.org/1999/html"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -17,32 +21,43 @@
   </head>
   <body>
     <header class="header">
-      <div class="container / header-container">
-        <div class="header-left-item">
-          <img class="header-logo-img" src="./img/header-logo-img.svg" />
-          <div class="header-logo-text">
-            <img
-              class="header-logo-text__logo"
-              src="./img/header-logo-text.png"
-            />
-            <p class="header-logo-text__text">Сеть пиццерий №1 в России</p>
+      <div class="container">
+        <div class="header-top">
+          <div class="header-top__left">
+            <img class="header-top__logo" src="./img/header-logo-img.svg" />
+            <div class="header-top__text">
+              <img
+                class="header-top__text__logo"
+                src="./img/header-logo-text.png"
+              />
+              <p class="header-top__text__text">Сеть пиццерий №1 в России</p>
+            </div>
           </div>
-        </div>
-        <div class="header-right-item">
-          <a class="header-number" href="tel:+88003020060">8-800-302-00-60</a
-          ><br />
-          <p class="header-call">Звонок бесплатный</p>
+          <div class="header-top-right">
+            <a class="header-top__number" href="tel:+88003020060"
+              >8-800-302-00-60</a
+            ><br />
+            <p class="header-top__call">Звонок бесплатный</p>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="slider">
-        <div class="slider">
-          <img class="slide-left" src="./img/slide-left.png" />
-          <img class="slide-center" src="./img/slide-central.png" />
-          <img class="slide-right" src="./img/slide-reght.png" />
+      <div class="slider-box">
+        <div class="container">
+          <ul class="slider">
+            <li class="slider-item">
+              <img src="./img/slide-left.png" />
+            </li>
+            <li class="slider-item">
+              <img src="./img/slide-central.png" />
+            </li>
+            <li class="slider-item">
+              <img src="./img/slide-reght.png" />
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">

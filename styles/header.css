@@ -3,37 +3,37 @@
   position: relative;
 }
 
-.header-container {
+.header-top {
   display: flex;
   justify-content: space-between;
 }
 
-.header-left-item {
+.header-top__left {
   display: inline-block;
 }
 
-.header-right-item {
+.header-top__right {
   display: inline-block;
   text-align: right;
 }
 
-.header-logo-img {
+.header-top__logo {
   display: inline-block;
 }
 
-.header-logo-text {
+.header-top__text {
   display: inline-block;
   height: 15px;
 }
 
-.header-logo-text__logo {
+.header-top__text__logo {
 }
 
-.header-logo-text__text {
+.header-top__text__text {
   margin-top: 0;
 }
 
-.header-number {
+.header-top__number {
   text-decoration: none;
   font-style: SemiBold;
   color: #000000;
@@ -41,7 +41,7 @@
   line-height: 25px;
 }
 
-.header-call {
+.header-top__call {
   margin-top: 0;
   color: #999999;
   font-size: 15px;
