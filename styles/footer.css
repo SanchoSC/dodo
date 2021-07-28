@@ -1,0 +1,39 @@
+@import url(footer-menu.css);
+@import url(footer-contacts.css);
+@import url(footer-info.css);
+@import url(footer-copy.css);
+
+.footer {
+  padding-top: 40px;
+  background-color: #464c55;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer__menu {
+  flex-basis: 66.666666%;
+}
+
+.footer__contacts {
+  flex-basis: 33.333333%;
+}
+
+.footer__info {
+  margin-top: 93px;
+  width: 66.666666%;
+}
+
+.footer__copy {
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-copy {
+    margin-top: 0px;
+  }
+}

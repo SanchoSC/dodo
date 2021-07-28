@@ -1,0 +1,17 @@
+.slider {
+}
+
+.slide-left {
+  height: 300px;
+  display: inline-block;
+}
+
+.slide-center {
+  height: 300px;
+  display: inline-block;
+}
+
+.slide-right {
+  height: 300px;
+  display: inline-block;
+}
