@@ -4,6 +4,7 @@
 @import url(footer-copy.css);
 
 .footer {
+  margin-top: 1000px;
   padding-top: 40px;
   background-color: #464c55;
 }
