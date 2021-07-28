@@ -27,10 +27,12 @@
 }
 
 .header-top__text__logo {
+  margin-top: 3px;
 }
 
 .header-top__text__text {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-top__number {
