@@ -1,3 +1,18 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header-menu__item {
+  padding-right: 24px;
+}
+
 .header-menu__link {
   color: #000;
   text-decoration: none;
