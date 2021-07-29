@@ -1,0 +1,48 @@
+.recommendation-menu {
+  display: flex;
+  align-items: flex-start;
+}
+.recommendation-menu__button {
+  display: flex;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 104px;
+  background: white;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
+  padding: 0;
+  align-items: center;
+  text-align: left;
+}
+
+.recommendation-menu__pizza {
+  justify-content: flex-start;
+  text-align: left;
+  margin: 14px 22px 14px 18px;
+  width: 76px;
+  height: 76px;
+}
+
+.recommendation-menu__items {
+  justify-content: flex-end;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+
+.recommendation-menu__items__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.recommendation-menu__items__price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 0;
+}

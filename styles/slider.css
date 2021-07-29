@@ -35,3 +35,6 @@
 .slider__item:first-child {
   margin-left: calc(-100% - 30px);
 }
+
+@media (max-width: 1024px) {
+}
