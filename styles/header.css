@@ -16,8 +16,6 @@
 }
 
 .header-top__right {
-  display: inline-block;
-  text-align: right;
 }
 
 .header-top__logo {
@@ -53,19 +51,24 @@
   color: #999999;
   font-size: 15px;
   line-height: 20px;
-  text-align: left;
+  text-align: right;
 }
 
 @media (max-width: 1024px) {
+  .header-top {
+    margin-bottom: 0;
+  }
+
   .header-top__right,
   .header-top__text__text {
     display: none;
   }
 
-  .header-top {
-    text-align: center;
-    vertical-align: middle;
+  .header-top__left {
+    display: flex;
+    align-items: center;
   }
   .header-top__text {
+    margin-left: 8px;
   }
 }

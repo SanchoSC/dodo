@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html
-  lang="ru"
-  xmlns="http://www.w3.org/1999/html"
-  xmlns="http://www.w3.org/1999/html"
->
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -20,26 +16,25 @@
     <title>Dodo</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-top">
-          <div class="header-top__left">
-            <img class="header-top__logo" src="./img/header-logo-img.svg" />
-            <div class="header-top__text">
-              <img
-                class="header-top__text__logo"
-                src="./img/header-logo-text.svg"
-              />
-              <p class="header-top__text__text">Сеть пиццерий №1 в России</p>
-            </div>
-          </div>
-          <div class="header-top__right">
-            <a class="header-top__number" href="tel:+88003020060"
-              >8-800-302-00-60</a
-            ><br />
-            <p class="header-top__call">Звонок бесплатный</p>
+    <header class="header / container">
+      <div class="header-top">
+        <div class="header-top__left">
+          <img class="header-top__logo" src="./img/header-logo-img.svg" />
+          <div class="header-top__text">
+            <img
+              class="header-top__text__logo"
+              src="./img/header-logo-text.svg"
+            />
+            <p class="header-top__text__text">Сеть пиццерий №1 в России</p>
           </div>
         </div>
+        <div class="header-top__right">
+          <a class="header-top__number" href="tel:+88003020060"
+            >8-800-302-00-60</a
+          ><br />
+          <p class="header-top__call">Звонок бесплатный</p>
+        </div>
+      </div>
       <div class="header-menu">
         <ul class="header-menu__list">
           <li class="header-menu__item">
@@ -63,8 +58,6 @@
         </ul>
         <button class="button">Корзина</button>
       </div>
-      </div>
-    </div>
     </header>
     <main>
       <div class="slider-box">
@@ -83,54 +76,67 @@
         </div>
       </div>
       <div class="container">
-        <div class="recommendation-box">
-          <nav class="recommendation__menu / recommendation-menu">
-
-            <button type="button" class="recommendation-menu__button">
-              <img src="img/header-list-pizza.png" class="recommendation-menu__pizza" alt="pizza">
-              <div class="recommendation-menu__items">
-                <div class="recommendation-menu__items__name">Цезарь</div>
-                <div class="recommendation-menu__items__price">от 445 ₽</div>
+        <section class="new-products">
+          <div class="new-product__wrapper">
+            <h2 class="new-products__title">Новое и популярное</h2>
+            <div class="new-products__cards">
+              <div class="new-products__card">
+                <div class="new-products__img">
+                  <img src="./img/header-list-pizza.png" alt="Цезарь" />
+                </div>
+                <div class="new-products__description">
+                  <p class="new-products__name">Цезарь</p>
+                  <p class="new-products__price">от 445 ₽</p>
+                </div>
               </div>
-            </button>
-
-            <button type="button" class="recommendation-menu__button">
-              <img src="img/header-list-pizza.png" class="recommendation-menu__pizza" alt="pizza">
-              <div class="recommendation-menu__items">
-                <div class="recommendation-menu__items__name">Нежный лосось</div>
-                <div class="recommendation-menu__items__price">от 495 ₽</div>
+              <div class="new-products__card">
+                <div class="new-products__img">
+                  <img src="./img/header-list-pizza.png" alt="Нежный лосось" />
+                </div>
+                <div class="new-products__description">
+                  <p class="new-products__name">Нежный лосось</p>
+                  <p class="new-products__price">от 495 ₽</p>
+                </div>
               </div>
-            </button>
-
-            <button type="button" class="recommendation-menu__button">
-              <img src="img/header-list-pizza.png" class="recommendation-menu__pizza" alt="pizza">
-              <div class="recommendation-menu__items">
-                <div class="recommendation-menu__items__name"> 2 пиццы</div>
-                <div class="recommendation-menu__items__price"> 899 ₽</div>
+              <div class="new-products__card">
+                <div class="new-products__img">
+                  <img src="./img/header-list-pizza.png" alt="2 пиццы" />
+                </div>
+                <div class="new-products__description">
+                  <p class="new-products__name">2 пиццы</p>
+                  <p class="new-products__price">от 899 ₽</p>
+                </div>
               </div>
-            </button>
-
-            <button type="button" class="recommendation-menu__button">
-              <img src="img/header-list-pizza.png" class="recommendation-menu__pizza" alt="pizza">
-              <div class="recommendation-menu__items">
-                <div class="recommendation-menu__items__name">Карбонара</div>
-                <div class="recommendation-menu__items__price">от 395 ₽</div>
+              <div class="new-products__card">
+                <div class="new-products__img">
+                  <img src="./img/header-list-pizza.png" alt="Карбонара" />
+                </div>
+                <div class="new-products__description">
+                  <p class="new-products__name">Карбонара</p>
+                  <p class="new-products__price">от 395 ₽</p>
+                </div>
               </div>
-            </button>
+            </div>
+          </div>
+        </section>
 
-        </div>
-      </div>
-      </div>
-      <section class="products">
-        <div class="container">
+        <section class="products">
           <h2 class="product-title">Пицца</h2>
           <div class="product-wraper">
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-firstpizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-firstpizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Пицца из половинок</h3>
-              <p class="product__subtitle">Соберите свою пиццу 35 см с двумя разными вкусами</p>
+              <p class="product__subtitle">
+                Соберите свою пиццу 35 см с двумя разными вкусами
+              </p>
               <div class="product__info">
                 <p class="product__price">от 600 ₽</p>
                 <button class="button" type="submit">Собрать</button>
@@ -139,91 +145,163 @@
 
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-secondpizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-secondpizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Пепперони-сердце</h3>
-              <p class="product__subtitle">Пикантная пепперони, моцарелла, томатный соус</p>
+              <p class="product__subtitle">
+                Пикантная пепперони, моцарелла, томатный соус
+              </p>
               <div class="product__info">
                 <p class="product__price">от 625 ₽</p>
-                <button class="button btn-collect" type="submit">Выбрать</button>
+                <button class="button btn-collect" type="submit">
+                  Выбрать
+                </button>
               </div>
             </div>
 
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-thirdpizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-thirdpizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Пирог-сердце</h3>
-              <p class="product__subtitle">Ананасы, брусника, сгущенное молоко</p>
+              <p class="product__subtitle">
+                Ананасы, брусника, сгущенное молоко
+              </p>
               <div class="product__info">
                 <p class="product__price">от 625 ₽</p>
-                <button class="button btn-collect" type="submit">Выбрать</button>
+                <button class="button btn-collect" type="submit">
+                  Выбрать
+                </button>
               </div>
             </div>
 
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-fourthpizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-fourthpizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Чиззи чеддер</h3>
-              <p class="product__subtitle">Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус, чеснок, итальянские травы</p>
+              <p class="product__subtitle">
+                Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус,
+                чеснок, итальянские травы
+              </p>
               <div class="product__info">
                 <p class="product__price">от 625 ₽</p>
-                <button class="button btn-collect" type="submit">Выбрать</button>
+                <button class="button btn-collect" type="submit">
+                  Выбрать
+                </button>
               </div>
             </div>
 
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-fivespizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-fivespizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Цыпленок блю чиз</h3>
-              <p class="product__subtitle">Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо</p>
+              <p class="product__subtitle">
+                Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо
+              </p>
               <div class="product__info">
                 <p class="product__price">от 445 ₽</p>
-                <button class="button btn-collect" type="submit">Выбрать</button>
+                <button class="button btn-collect" type="submit">
+                  Выбрать
+                </button>
               </div>
             </div>
 
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-sixpizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-sixpizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Нежный лосось</h3>
-              <p class="product__subtitle">Лосось, томаты черри, соус песто, моцарелла, соус альфредо</p>
+              <p class="product__subtitle">
+                Лосось, томаты черри, соус песто, моцарелла, соус альфредо
+              </p>
               <div class="product__info">
                 <p class="product__price">от 495 ₽</p>
-                <button class="button btn-collect" type="submit">Выбрать</button>
+                <button class="button btn-collect" type="submit">
+                  Выбрать
+                </button>
               </div>
             </div>
 
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-sevenpizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-sevenpizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Сырная</h3>
-              <p class="product__subtitle">Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо</p>
+              <p class="product__subtitle">
+                Увеличенная порция моцареллы, сыры чеддер и пармезан, соус
+                альфредо
+              </p>
               <div class="product__info">
                 <p class="product__price">от 245 ₽</p>
-                <button class="button btn-collect" type="submit">Выбрать</button>
+                <button class="button btn-collect" type="submit">
+                  Выбрать
+                </button>
               </div>
             </div>
 
             <div class="product">
               <div class="product__img">
-                <img class="product__pic" src="./img/icon-eightpizza.png" width="220" height="220" alt="">
+                <img
+                  class="product__pic"
+                  src="./img/icon-eightpizza.png"
+                  width="220"
+                  height="220"
+                  alt=""
+                />
               </div>
               <h3 class="product__title">Пепперони фреш</h3>
-              <p class="product__subtitle">Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус</p>
+              <p class="product__subtitle">
+                Пикантная пепперони, увеличенная порция моцареллы, томаты,
+                томатный соус
+              </p>
               <div class="product__info">
                 <p class="product__price">от 245 ₽</p>
-                <button class="button btn-collect" type="submit">Выбрать</button>
+                <button class="button btn-collect" type="submit">
+                  Выбрать
+                </button>
               </div>
             </div>
-
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">

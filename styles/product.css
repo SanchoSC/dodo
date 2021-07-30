@@ -14,7 +14,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 250px;
 }
 
 .product__img {
