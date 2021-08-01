@@ -4,17 +4,14 @@
 }
 
 .product-wraper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  row-gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px 20px;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  width: 250px;
 }
 
 .product__img {
@@ -52,7 +49,8 @@
   font-weight: 400;
   line-height: 19px;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: #73798c;
+  margin-top: 0;
 }
 
 .product__info {
@@ -71,4 +69,96 @@
 .btn-collect:hover {
   background: rgb(255, 227, 209);
   transition: 0.3s;
+}
+
+@media (max-width: 1024px) {
+  .products-title {
+    display: none;
+  }
+
+  .product-responsive .container {
+    padding: 0 0 0 30px;
+  }
+
+  .product-responsive {
+    display: block;
+    margin-bottom: 20px;
+    overflow: auto;
+  }
+
+  .product-responsive__item:nth-child(even) {
+    margin: 0 8px;
+  }
+
+  .product-responsive__item:nth-child(5) {
+    padding-right: 30px;
+  }
+
+  .product-wraper {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    grid-template-areas:
+      "image description"
+      "image description"
+      "image price";
+    padding: 12px 10px 12px 0;
+    border-bottom: 1px solid #f3f3f7;
+  }
+
+  .product:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .product:nth-child(5) {
+    border: 0;
+  }
+
+  .product__img {
+    grid-area: image;
+    align-self: flex-start;
+    margin-right: 7px;
+    text-align: center;
+  }
+
+  .product-description {
+    grid-area: description;
+  }
+
+  .price_button {
+    grid-area: price;
+  }
+
+  .product__pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .product__title {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .product__subtitle {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .product__price {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .price_button {
+    display: block;
+  }
 }

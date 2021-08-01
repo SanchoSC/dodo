@@ -21,6 +21,9 @@
   flex-shrink: 0;
 }
 
+.slider__item_2 {
+}
+
 .slider__item_1,
 .slider__item_3 {
   opacity: 0.2;
@@ -47,13 +50,26 @@
     margin-left: 0;
   }
 
-  .slider__item_1,
-  .slider__item_3 {
+  .slider__item_1 {
     opacity: 1;
   }
 
+  .slider__item_2,
+  .slider__item_3 {
+    opacity: 0.5;
+  }
+
   .slider__img {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 93px;
+  }
+
+  .slider__item {
+    width: 250px;
+    height: 93px;
+  }
+
+  .slider {
+    margin-bottom: 20px;
   }
 }

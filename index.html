@@ -6,6 +6,8 @@
       name="viewport"
       content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/index.css" />
-    <title>Dodo</title>
+    <title>Sancho</title>
   </head>
   <body>
     <header class="header / container">
@@ -78,7 +80,7 @@
       <div class="container">
         <section class="new-products">
           <div class="new-product__wrapper">
-            <h2 class="new-products__title">Новое и популярное</h2>
+            <button class="new-products__button">Новое и популярное</button>
             <div class="new-products__cards">
               <div class="new-products__card">
                 <div class="new-products__img">
@@ -121,182 +123,245 @@
         </section>
 
         <section class="products">
-          <h2 class="product-title">Пицца</h2>
-          <div class="product-wraper">
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-firstpizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
+          <div class="container">
+            <h2 class="products-title">Пицца</h2>
+            <div class="product-wraper">
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-firstpizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Пицца из половинок</h3>
+                  <p class="product__subtitle">
+                    Соберите свою пиццу 35 см с двумя разными вкусами
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 600 ₽</p>
+                  <button class="button" type="submit">Собрать</button>
+                  <button class="button price_button" type="submit">
+                    от 600 ₽
+                  </button>
+                </div>
               </div>
-              <h3 class="product__title">Пицца из половинок</h3>
-              <p class="product__subtitle">
-                Соберите свою пиццу 35 см с двумя разными вкусами
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 600 ₽</p>
-                <button class="button" type="submit">Собрать</button>
-              </div>
-            </div>
 
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-secondpizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-secondpizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Пепперони-сердце</h3>
+                  <p class="product__subtitle">
+                    Пикантная пепперони, моцарелла, томатный соус
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 625 ₽</p>
+                  <button class="button btn_secondary" type="submit">
+                    Выбрать
+                  </button>
+                  <button
+                    class="button btn_secondary price_button"
+                    type="submit"
+                  >
+                    от 395 ₽
+                  </button>
+                </div>
               </div>
-              <h3 class="product__title">Пепперони-сердце</h3>
-              <p class="product__subtitle">
-                Пикантная пепперони, моцарелла, томатный соус
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 625 ₽</p>
-                <button class="button btn-collect" type="submit">
-                  Выбрать
-                </button>
-              </div>
-            </div>
 
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-thirdpizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-thirdpizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Пирог-сердце</h3>
+                  <p class="product__subtitle">
+                    Ананасы, брусника, сгущенное молоко
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 625 ₽</p>
+                  <button class="button btn_secondary" type="submit">
+                    Выбрать
+                  </button>
+                  <button
+                    class="button btn_secondary price_button"
+                    type="submit"
+                  >
+                    от 445 ₽
+                  </button>
+                </div>
               </div>
-              <h3 class="product__title">Пирог-сердце</h3>
-              <p class="product__subtitle">
-                Ананасы, брусника, сгущенное молоко
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 625 ₽</p>
-                <button class="button btn-collect" type="submit">
-                  Выбрать
-                </button>
-              </div>
-            </div>
 
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-fourthpizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-fourthpizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Чиззи чеддер</h3>
+                  <p class="product__subtitle">
+                    Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный
+                    соус, чеснок, итальянские травы
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 625 ₽</p>
+                  <button class="button btn_secondary" type="submit">
+                    Выбрать
+                  </button>
+                  <button
+                    class="button btn_secondary price_button"
+                    type="submit"
+                  >
+                    от 445 ₽
+                  </button>
+                </div>
               </div>
-              <h3 class="product__title">Чиззи чеддер</h3>
-              <p class="product__subtitle">
-                Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус,
-                чеснок, итальянские травы
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 625 ₽</p>
-                <button class="button btn-collect" type="submit">
-                  Выбрать
-                </button>
-              </div>
-            </div>
 
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-fivespizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-fivespizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Цыпленок блю чиз</h3>
+                  <p class="product__subtitle">
+                    Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 445 ₽</p>
+                  <button class="button btn_secondary" type="submit">
+                    Выбрать
+                  </button>
+                  <button
+                    class="button btn_secondary price_button"
+                    type="submit"
+                  >
+                    от 445 ₽
+                  </button>
+                </div>
               </div>
-              <h3 class="product__title">Цыпленок блю чиз</h3>
-              <p class="product__subtitle">
-                Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 445 ₽</p>
-                <button class="button btn-collect" type="submit">
-                  Выбрать
-                </button>
-              </div>
-            </div>
 
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-sixpizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-sixpizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Нежный лосось</h3>
+                  <p class="product__subtitle">
+                    Лосось, томаты черри, соус песто, моцарелла, соус альфредо
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 495 ₽</p>
+                  <button class="button btn_secondary" type="submit">
+                    Выбрать
+                  </button>
+                  <button
+                    class="button btn_secondary price_button"
+                    type="submit"
+                  >
+                    от 495 ₽
+                  </button>
+                </div>
               </div>
-              <h3 class="product__title">Нежный лосось</h3>
-              <p class="product__subtitle">
-                Лосось, томаты черри, соус песто, моцарелла, соус альфредо
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 495 ₽</p>
-                <button class="button btn-collect" type="submit">
-                  Выбрать
-                </button>
-              </div>
-            </div>
 
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-sevenpizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-sevenpizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Сырная</h3>
+                  <p class="product__subtitle">
+                    Увеличенная порция моцареллы, сыры чеддер и пармезан, соус
+                    альфредо
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 245 ₽</p>
+                  <button class="button btn_secondary" type="submit">
+                    Выбрать
+                  </button>
+                  <button
+                    class="button btn_secondary price_button"
+                    type="submit"
+                  >
+                    от 245 ₽
+                  </button>
+                </div>
               </div>
-              <h3 class="product__title">Сырная</h3>
-              <p class="product__subtitle">
-                Увеличенная порция моцареллы, сыры чеддер и пармезан, соус
-                альфредо
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 245 ₽</p>
-                <button class="button btn-collect" type="submit">
-                  Выбрать
-                </button>
-              </div>
-            </div>
 
-            <div class="product">
-              <div class="product__img">
-                <img
-                  class="product__pic"
-                  src="./img/icon-eightpizza.png"
-                  width="220"
-                  height="220"
-                  alt=""
-                />
-              </div>
-              <h3 class="product__title">Пепперони фреш</h3>
-              <p class="product__subtitle">
-                Пикантная пепперони, увеличенная порция моцареллы, томаты,
-                томатный соус
-              </p>
-              <div class="product__info">
-                <p class="product__price">от 245 ₽</p>
-                <button class="button btn-collect" type="submit">
-                  Выбрать
-                </button>
+              <div class="product">
+                <div class="product__img">
+                  <img
+                    class="product__pic"
+                    src="./img/icon-eightpizza.png"
+                    width="220"
+                    height="220"
+                    alt=""
+                  />
+                </div>
+                <div class="product-description">
+                  <h3 class="product__title">Пепперони фреш</h3>
+                  <p class="product__subtitle">
+                    Пикантная пепперони, увеличенная порция моцареллы, томаты,
+                    томатный соус
+                  </p>
+                </div>
+                <div class="product__info">
+                  <p class="product__price">от 245 ₽</p>
+                  <button class="button btn_secondary" type="submit">
+                    Выбрать
+                  </button>
+                  <button
+                    class="button btn_secondary price_button"
+                    type="submit"
+                  >
+                    от 245 ₽
+                  </button>
+                </div>
               </div>
             </div>
           </div>
